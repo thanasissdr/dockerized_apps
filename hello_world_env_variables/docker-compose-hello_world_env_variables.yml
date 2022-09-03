@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  hello_world_env_variables:
+    build:
+      context: . # parent dir which contains the corresponding Dockerfile.
+      dockerfile: Dockerfile
+    environment:
+      - USERNAME=thanos
+      - RANDOM_VARIABLE=10

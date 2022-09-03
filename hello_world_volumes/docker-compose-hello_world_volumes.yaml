@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  hello_world_volumes:
+    build:
+      context: ../hello_world_volumes # parent dir which contains the corresponding Dockerfile.
+      dockerfile: Dockerfile
+    volumes:
+      - ../hello_world_volumes/volume_host:/var/lib/volume_dst

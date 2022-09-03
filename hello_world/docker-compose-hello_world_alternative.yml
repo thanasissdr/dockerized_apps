@@ -1,0 +1,4 @@
+version: "3.9"
+services:
+  hello_world_simple:
+    build: ../hello_world

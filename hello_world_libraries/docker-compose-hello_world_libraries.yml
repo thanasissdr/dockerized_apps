@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  hello_world_libraries:
+    build:
+      args:
+        - PYTHON_VERSION=3.10.5
+      context: . # parent dir which contains the appropriate Dockerfile relative to this docker-compose file
+      dockerfile: Dockerfile # name of the corresponding dockerfile
