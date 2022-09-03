@@ -26,7 +26,7 @@ docker compose --file docker-compose-hello_world_env_variables.yml up
 
 > The environment variables defined here are of higher priority than the ones specificed in `Dockerfile`
 
-### Declaring environments in `.env` 
+### Declaring env variables in `.env` 
 ```cmd
 docker compose --file docker-compose-hello_world_env_variables_alternative.yml up
 ```
