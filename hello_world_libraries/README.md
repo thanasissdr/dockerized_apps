@@ -3,7 +3,7 @@
 ## 2 steps
 ### Build the image
 ```cmd
-docker build --file Dockerfile --tag hello_world:libraries --build-arg PYTHON_VERSION=3.10.4 .
+docker build --file Dockerfile --tag hello_world:libraries --build-arg PYTHON_VERSION=3.6.9 .
 ```
 
 ### Run the application (while creating the container)
