@@ -20,5 +20,5 @@ docker run -it --rm --entrypoint /bin/bash hello_world:simple
 ## Using `docker-compose`
 
 ```cmd
-docker compose --file docker-compose-hello_world_simple.yml up
+docker compose --file docker-compose-hello_world.yml up
 ```
