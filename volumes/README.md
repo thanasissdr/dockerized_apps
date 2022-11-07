@@ -24,4 +24,10 @@ docker compose --file docker-compose.yaml up --build
 ```
 where we use an external volume which we created before (when writing to volumes)
 
-The output will be the list of the named volume.
+The output will be a listdir of the named volume.
+
+
+## EXTRA
+- Inspecting volumes: `docker volume inspect <volume-name>`
+- Deleting volumes: `docker volume rm <volume-name>`
+- List volumes: `docker volume ls`
