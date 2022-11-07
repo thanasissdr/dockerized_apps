@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  named-volume-reader:
+    build:
+      context: . # parent dir which contains the corresponding Dockerfile.
+      dockerfile: Dockerfile
+    volumes:
+      - write_to_volume_named-volume:/src/data/volume_to_read
+
+volumes:
+  write_to_volume_named-volume:
+    external: true
+      # Make sure that `write_to_volume_named-volume` is present when `docker volume ls` 
+      #\\wsl.localhost\docker-desktop-data\version-pack-data\community\docker\volumes

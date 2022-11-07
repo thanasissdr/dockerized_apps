@@ -1,6 +1,5 @@
 docker-compose-examples-ui/run_server/volume
-volume_host
-
+volumes/named-volume
 
 # Created by https://www.toptal.com/developers/gitignore/api/windows,python,git
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,python,git

@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  named-volume-internal-writer:
+    build:
+      context: . # parent dir which contains the corresponding Dockerfile.
+      dockerfile: Dockerfile
+    volumes:
+      - named-volume:/src/data #\\wsl.localhost\docker-desktop-data\version-pack-data\community\docker\volumes
+
+  mounted-volume-service-writer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./named-volume:/src/data # This will be created in the project folder.
+
+volumes:
+  named-volume:
+    driver: local
+    external: false

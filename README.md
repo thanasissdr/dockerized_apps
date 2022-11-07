@@ -28,5 +28,5 @@ The suggested order to look at the examples is:
 
 Alternatively, we can use `docker-compose`, which simplifies the steps described above.
 
-- hello_world_volumes
+- volumes
 - docker-compose-examples-ui
